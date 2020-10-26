@@ -1,4 +1,4 @@
-# sillywebsite
+# s2i-do288-httpd
 FROM openshift/base-centos7
 
 # TODO: Put the maintainer name in the image metadata
@@ -8,9 +8,10 @@ FROM openshift/base-centos7
 # ENV BUILDER_VERSION 1.0
 
 # TODO: Set labels used in OpenShift to describe the builder image
-LABEL io.k8s.description="Platform for building sillywebsite" \
-      io.k8s.display-name="sillywebsite" \
-      io.openshift.expose-services="8080:http" \
+#LABEL io.k8s.description="Platform for building xyz" \
+#      io.k8s.display-name="builder x.y.z" \
+#      io.openshift.expose-services="8080:http" \
+#      io.openshift.tags="builder,x.y.z,etc."
 
 # TODO: Install required packages here:
 # RUN yum install -y ... && yum clean all -y

@@ -1,5 +1,5 @@
 # sillywebsite
-FROM registry.access.redhat.com/ubi8/ubi:8.0 
+FROM openshift/base-centos7
 
 # TODO: Put the maintainer name in the image metadata
 # LABEL maintainer="Your Name <your@email.com>"
@@ -9,7 +9,7 @@ FROM registry.access.redhat.com/ubi8/ubi:8.0
 
 # TODO: Set labels used in OpenShift to describe the builder image
 LABEL io.k8s.description="Platform for building sillywebsite" \
-      io.k8s.display-name="Practice Exam: SillyWebsite" \
+      io.k8s.display-name="sillywebsite" \
       io.openshift.expose-services="8080:http" \
 
 # TODO: Install required packages here:
